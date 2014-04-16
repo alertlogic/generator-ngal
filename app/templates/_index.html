@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>
+            {{ title }}
+        </title>
+        <!-- jQuery // -->
+        <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+        <!-- Bootstrap CSS & JS // -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <!-- Base CSS // -->
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <!--(if target local)> -->
+        <!--<script type="text/javascript">parent.uitest && parent.uitest.instrument(window);</script>-->
+        <script src="http://localhost:35729/livereload.js"></script>
+        <!--<!(endif)-->
+        <!-- RequireJS // -->
+        <script src="../js/requirejs/require.js" data-main="main"></script>
+    </head>
+    <body>
+         <!-- Include remote template for navbar // -->
+		<ng-include src="'../navbar/navbar.html'" ng-controller="NavbarController"></ng-include>
+        
+        <div class="container">
+             <!-- Include remote template for about ontroller data // -->
+			<ng-include src="'../sample/sample.html'" ng-controller="SampleController"></ng-include>
+        </div>
+        
+    </body>
+</html>
