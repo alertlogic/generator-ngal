@@ -1,5 +1,3 @@
-# generator-ngal [![Build Status](https://secure.travis-ci.org/bskidmore/generator-ngal.png?branch=master)](https://travis-ci.org/bskidmore/generator-ngal)
-
 > [Yeoman](http://yeoman.io) generator
 
 
