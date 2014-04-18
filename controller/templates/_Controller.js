@@ -21,17 +21,19 @@ define(function () {
      * @param {Object} $resource
      * @param {Object} $routeParams
      * @param {Object} $cookies
-     * @param {Object} MessageService
+     * @param {Object} SampleService
      */
-	var SampleController = function($scope, $location, $resource, $routeParams, $cookies, MessageService) {
-        $scope.cookies  = $cookies;
+	var SampleController = function($scope, $location, $resource, $routeParams, $cookies, SampleService) {
+        $scope.cookies       = $cookies;
+        // We just do this to show usage and not have unused errors on generation - safe to delete
+        $scope.sampleService = SampleService;
         
         /**
          * Write Controller Logic Here
          */
 	};
 
-	SampleController.$inject = ["$scope", '$location', '$resource', '$routeParams', '$cookies', 'MessageService'];
+	SampleController.$inject = ["$scope", '$location', '$resource', '$routeParams', '$cookies', 'SampleService'];
 
 	return SampleController;
 });

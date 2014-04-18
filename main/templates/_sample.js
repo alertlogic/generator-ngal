@@ -5,11 +5,12 @@
  * @module sample
  * 
  * @requires sample/SampleController
- * @requires common/MessageService
+ * @requires sample/SampleService
  * 
  * @param angular RequireJS inclusion of AngularJS library
  * @param SampleController RequireJS inclusion of SampleController class
- * @param MessageService RequireJS inclusion of MessageService module
+ * @param SampleService RequireJS inclusion of SampleService module
+ * @param SampleDirective RequireJS inclusion of SampleDirective module
  *
  * @returns instance of the sample module
  *
@@ -18,7 +19,7 @@
  * @copyright Alert Logic, Inc 2014
  */
 
-define(['angular', '../sample/SampleController', '../common/MessageService', 'ngRoute', 'ngResource', 'ngCookies'], function (angular, SampleController, MessageService) {
+define(['angular', '../sample/SampleController', '../sample/SampleService', '../sample/SampleDirective', 'ngRoute', 'ngResource', 'ngCookies'], function (angular, SampleController, SampleService, SampleDirective) {
 	"use strict";
 
     /** @constructs sample */
@@ -26,9 +27,11 @@ define(['angular', '../sample/SampleController', '../common/MessageService', 'ng
     
     /** @borrows sample/SampleController */
 	sample.controller('SampleController', SampleController);
-    /** @borrows common/MessageService */
-    sample.service('MessageService', MessageService);
-
+    /** @borrows sample/SampleService */
+    sample.service('SampleService', SampleService);
+    /** @borrows sampleSampleDirective */
+    sample.directive('SampleDirective', SampleDirective);
+    
 	return sample;
     
 });

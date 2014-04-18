@@ -27,19 +27,27 @@ To install generator-ngal from npm, run:
 $ npm install -g generator-ngal
 ```
 
-Finally, initiate the generator:
+### Getting To Know ngal
 
 ```
-$ yo ngal
+$yo ngal Name
 ```
-
-### Getting To Know Yeoman
-
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
-
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
-
-
-## License
-
-MIT
+Creates a complete module named Name, the below commands will allow you to generate single sections of code.
+```
+$yo ngal:config Name
+```
+```
+$yo ngal:controller Name
+```
+```
+$yo ngal:directive Name
+```
+```
+$yo ngal:main Name
+```
+```
+$yo ngal:service Name
+```
+```
+$yo ngal:version Name
+```

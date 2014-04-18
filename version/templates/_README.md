@@ -12,7 +12,7 @@ After cloning ngStart cd to the ngStart/src/main directory and execute:
 
 ##Features
 
-This project features multiple controllers on a page, MessageService injection, i18n support, and provides examples of properly configuring reuqirejs loading.
+This project features reuqirejs loading.
 
 ##Usage
 
@@ -20,7 +20,7 @@ In your ngStart directory start the web service
     
     grunt web
     
-Visit [your installation](http://127.0.0.1/src/main/sample/) to see the working module.
+Visit [your installation](http://127.0.0.1/src/main/) to see the working module.
 
 ##Updates
 It is required that this README be updated to include any changes or additions with proper Feature listing and Usage instructions.
