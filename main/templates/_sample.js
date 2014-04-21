@@ -19,7 +19,7 @@
  * @copyright Alert Logic, Inc 2014
  */
 
-define(['angular', '../sample/SampleController', '../sample/SampleService', '../sample/SampleDirective', 'ngRoute', 'ngResource', 'ngCookies'], function (angular, SampleController, SampleService, SampleDirective) {
+define(['angular', '../sample/SampleController', '../sample/SampleService', '../sample/SampleDirective', 'ngRoute', 'ngResource'], function (angular, SampleController, SampleService, SampleDirective) {
 	"use strict";
 
     /** @constructs sample */

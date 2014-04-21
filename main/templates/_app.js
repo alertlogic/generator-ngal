@@ -6,7 +6,6 @@
  * @requires config/config
  * @requires gettext
  * @requires ngRoute
- * @requires ngCookies
  * @requires common/common
  * @requires sample/sample
  * @requires navbar/navbar
