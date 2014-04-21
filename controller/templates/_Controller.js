@@ -23,7 +23,6 @@ define(function () {
      * @param {Object} SampleService
      */
 	var SampleController = function($scope, $location, $resource, $routeParams, SampleService) {
-        $scope.cookies       = $cookies;
         // We just do this to show usage and not have unused errors on generation - safe to delete
         $scope.sampleService = SampleService;
         
