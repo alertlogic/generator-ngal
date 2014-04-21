@@ -21,17 +21,20 @@ define(function () {
      * @param {Object} $resource
      * @param {Object} $routeParams
      * @param {Object} SampleService
+     * @param {Object} LocalStorageModule
      */
-	var SampleController = function($scope, $location, $resource, $routeParams, SampleService) {
+	var SampleController = function($scope, $location, $resource, $routeParams, SampleService, localStorageService) {
         // We just do this to show usage and not have unused errors on generation - safe to delete
         $scope.sampleService = SampleService;
+        localStorageService.set('sample.page.title','Sample Page');
+        $scope.title = localStorageService.get('sample.page.title');
         
         /**
          * Write Controller Logic Here
          */
 	};
 
-	SampleController.$inject = ["$scope", '$location', '$resource', '$routeParams', 'SampleService'];
+	SampleController.$inject = ["$scope", '$location', '$resource', '$routeParams', 'SampleService', 'localStorageService'];
 
 	return SampleController;
 });

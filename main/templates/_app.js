@@ -6,6 +6,7 @@
  * @requires config/config
  * @requires gettext
  * @requires ngRoute
+ * @require LocalStorageModule
  * @requires common/common
  * @requires sample/sample
  * @requires navbar/navbar
@@ -24,6 +25,7 @@ define(['angular',
         'config/config',
         'gettext',
         'ngRoute',
+        'LocalStorageModule',
         '../common/common',
         '../sample/sample',
         '../navbar/navbar'], function(angular, config) {
