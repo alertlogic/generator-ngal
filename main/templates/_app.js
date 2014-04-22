@@ -26,6 +26,8 @@ define(['angular',
         'gettext',
         'ngRoute',
         'LocalStorageModule',
+        'ui.select',
+        'ngSanitize',
         '../common/common',
         '../sample/sample',
         '../navbar/navbar'], function(angular, config) {

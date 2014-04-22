@@ -19,11 +19,11 @@
  * @copyright Alert Logic, Inc 2014
  */
 
-define(['angular', '../sample/SampleController', '../sample/SampleService', '../sample/SampleDirective', 'ngRoute', 'ngResource', 'LocalStorageModule'], function (angular, SampleController, SampleService, SampleDirective) {
+define(['angular', '../sample/SampleController', '../sample/SampleService', '../sample/SampleDirective', 'ngRoute', 'ngResource', 'LocalStorageModule', 'ngSanitize', 'ui.select'], function (angular, SampleController, SampleService, SampleDirective) {
 	"use strict";
 
     /** @constructs sample */
-	var sample = angular.module("sample", ['ngRoute', 'ngResource', 'LocalStorageModule']);
+	var sample = angular.module("sample", ['ngRoute', 'ngResource', 'LocalStorageModule', 'ngSanitize', 'ui.select']);
     
     /** @borrows sample/SampleController */
 	sample.controller('SampleController', SampleController);
