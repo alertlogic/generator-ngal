@@ -9,11 +9,11 @@
             {{ title }}
         </title>
         <!-- jQuery // -->
-        <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+        <script src="../js/jquery/dist/jquery.min.js"></script>
         <!-- Bootstrap CSS & JS // -->
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../js/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../js/bootstrap/dist/css/bootstrap-theme.min.css">
+        <script src="../js/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- Base CSS // -->
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <!--(if target local)> -->
@@ -22,14 +22,16 @@
         <!--<!(endif)-->
         <!-- RequireJS // -->
         <script src="../js/requirejs/require.js" data-main="main"></script>
+        <!-- Select CSS // -->
+        <link rel="stylesheet" type="text/css" href="../js/angular-ui-select/dist/select.css">
     </head>
     <body>
          <!-- Include remote template for navbar // -->
 		<ng-include src="'../navbar/navbar.html'" ng-controller="NavbarController"></ng-include>
         
         <div class="container">
-             <!-- Include remote template for about ontroller data // -->
-			<ng-include src="'../sample/sample.html'" ng-controller="SampleController"></ng-include>
+            <!-- Include remote template for sample controller data // -->
+ 			<ng-include src="'../sample/sample.html'" ng-controller="SampleController"></ng-include>
         </div>
         
     </body>
