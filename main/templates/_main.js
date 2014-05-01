@@ -27,7 +27,10 @@
             'ngSanitize': '../js/angular-sanitize/angular-sanitize.min',
             'angular-ui-utils': '../js/angular-ui-utils/ui-utils.min',
             'ng-grid': '../js/ng-grid/build/ng-grid.min',
-            'translations': '../translations'
+            'translations': '../translations',
+            'd3': '../js/d3/d3',
+            'nvd3': '../js/nvd3/nv.d3',
+            'angularjs-nvd3-directives': '../js/angularjs-nvd3-directives/dist/angularjs-nvd3-directives',
 		},
 		shim: {
 			'angular': { deps: [], exports: 'angular' },
@@ -43,7 +46,9 @@
             'ngSanitize': {deps: ['angular']},
             'angular-ui-utils': {deps: ['angular']},
             'ng-grid': {deps: ['angular']},
-            'translations': {deps: ['app']}
+            'translations': {deps: ['app']},
+            'nvd3': {deps: ['angular', 'd3']},
+            'angularjs-nvd3-directives': {deps: ['angular', 'd3', 'nvd3']}
 		}
 	});
 

@@ -15,7 +15,7 @@ define(['angular', 'config/configuration'], function(angular, configuration) {
    'use strict';
 
     var standardAngularModules = ['ngRoute', 'ngResource', 'gettext', 'LocalStorageModule',
-                                'config', 'navbar', 'sample', 'ngSanitize', 'ui.select'],
+                                'config', 'navbar', 'sample', 'ngSanitize', 'ui.select', 'nvd3ChartDirectives'],
         standardRequireModules = ['angular', 'ngAnimate', 'ui.bootstrap', 'angular-ui-utils', 'angular-growl',
                                   'ngSanitize', 'app', 'translations'],
         config = angular.module('config', []);

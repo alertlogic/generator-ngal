@@ -30,7 +30,8 @@ define(['angular',
         'ngSanitize',
         '../common/common',
         '../sample/sample',
-        '../navbar/navbar'], function(angular, config) {
+        '../navbar/navbar',
+        'angularjs-nvd3-directives'], function(angular, config) {
 	"use strict";
 
     /** @constructs app */
