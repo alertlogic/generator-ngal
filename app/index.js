@@ -15,40 +15,34 @@ var NgalGenerator = module.exports = function NgalGenerator(args, options) {
         
         this.log(this.yeoman);
     
-        var stats = fs.existsSync(path.resolve(lowerCase));
-        if (stats) {
-            console.log(chalk.magenta('Module exists!  Cancelled...'));
-            process.exit(1);
-        } else {
-            console.log(chalk.yellow('Generating Module: ' + upperCase + '.'));
+        console.log(chalk.yellow('Generating Module: ' + upperCase + '.'));
+        
+        this.mkdir(lowerCase);
+        
+        this.hookFor('ngal:main', {
+            args: args
+        });
+        
+        this.hookFor('ngal:config', {
+            args: args
+        });
+        
+        this.hookFor('ngal:version', {
+            args: args
+        });
+        
+        this.hookFor('ngal:controller', {
+            args: args
+        });
+        
+        this.hookFor('ngal:service', {
+            args: args
+        });
+        
+        this.hookFor('ngal:directive', {
+            args: args
+        });
             
-            this.mkdir(lowerCase);
-            
-            this.hookFor('ngal:main', {
-                args: args
-            });
-            
-            this.hookFor('ngal:config', {
-                args: args
-            });
-            
-            this.hookFor('ngal:version', {
-                args: args
-            });
-            
-            this.hookFor('ngal:controller', {
-                args: args
-            });
-            
-            this.hookFor('ngal:service', {
-                args: args
-            });
-            
-            this.hookFor('ngal:directive', {
-                args: args
-            });
-            
-        }
     } catch (e) {
         console.log(e);
         console.log(chalk.magenta('You must provide a Module name.'));
