@@ -4,11 +4,10 @@
   "description": "Yeoman generator for creating https://github.com/alertlogic/ngStart modules",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "bskidmore/generator-ngal",
+  "repository": "alertlogic/generator-ngal",
   "author": {
-    "name": "Barry Skidmore",
-    "email": "bskidmore@alertlogic.com",
-    "url": "https://github.com/alertlogic/generator-ngal"
+    "name": "Alert Logic UI Team",
+    "email": "ui@alertlogic.com"
   },
   "engines": {
     "node": ">=0.10.0"
